@@ -6,35 +6,8 @@
             </div>
             <div class="contain-menu">
                 <ul class="menu">
-                    <li>
-                        <a href="#">link</a>
-                    </li>
-                    <li>
-                        <a href="#">link</a>
-                    </li>
-                    <li>
-                        <a href="#">link</a>
-                    </li>
-                    <li>
-                        <a href="#">link</a>
-                    </li>
-                    <li>
-                        <a href="#">link</a>
-                    </li>
-                    <li>
-                        <a href="#">link</a>
-                    </li>
-                    <li>
-                        <a href="#">link</a>
-                    </li>
-                    <li>
-                        <a href="#">link</a>
-                    </li>
-                    <li>
-                        <a href="#">link</a>
-                    </li>
-                    <li>
-                        <a href="#">link</a>
+                    <li v-for="link in links" :key="link">
+                        <a href="#">{{link.name}}</a>
                     </li>
                 </ul>
             </div>
@@ -45,12 +18,48 @@
 <script>
 export default {
   name: "HeaderMenu",
+  data: function() {
+      return {
+          links: [
+              {
+                  name: 'CHARACTERS',
+              },
+              {
+                  name: 'COMICS',
+              },
+              {
+                  name: 'MOVIES',
+              },
+              {
+                  name: 'TV',
+              },
+              {
+                  name: 'GAMES',
+              },
+              {
+                  name: 'COLLECTIBLES',
+              },
+              {
+                  name: 'VIDEOS',
+              },
+              {
+                  name: 'FANS',
+              },
+              {
+                  name: 'NEWS',
+              },
+              {
+                  name: 'SHOP',
+              }
+          ]
+      }
+  }
 };
 </script>
 
-<style lang="scss" scoped>
-@import url('../styles/common.scss');
-@import url('../styles/variables.scss');
+<style lang="scss">
+@import '../styles/common.scss';
+@import '../styles/variables.scss';
 .header {
     height: 100px;
     background-color: #ffffff;
@@ -67,16 +76,18 @@ export default {
     li {
         list-style: none;
         margin-left: 20px;
-        height: 70px;
-        color: $primary_color;
-        &:hover {
-            border-bottom: 3px solid $primary_color;
-        }
+        height: 100px;
     }
 }
 a {
     text-decoration: none;
-    line-height: 70px;
+    line-height: 100px;
+    padding-bottom: 38px;
+    color: black;
+     &:hover {
+         color: $brand_primary_color;
+         border-bottom: 3px solid $brand_primary_color;
+        }
 }
 img {
     width: 70px;
