@@ -7,7 +7,7 @@
             <div class="contain-menu">
                 <ul class="menu">
                     <li v-for="link in links" :key="link">
-                        <a href="#">{{link.name}}</a>
+                        <a href="#">{{link.nameLink}}</a>
                     </li>
                 </ul>
             </div>
@@ -22,34 +22,34 @@ export default {
       return {
           links: [
               {
-                  name: 'CHARACTERS',
+                  nameLink: 'CHARACTERS',
               },
               {
-                  name: 'COMICS',
+                  nameLink: 'COMICS',
               },
               {
-                  name: 'MOVIES',
+                  nameLink: 'MOVIES',
               },
               {
-                  name: 'TV',
+                  nameLink: 'TV',
               },
               {
-                  name: 'GAMES',
+                  nameLink: 'GAMES',
               },
               {
-                  name: 'COLLECTIBLES',
+                  nameLink: 'COLLECTIBLES',
               },
               {
-                  name: 'VIDEOS',
+                  nameLink: 'VIDEOS',
               },
               {
-                  name: 'FANS',
+                  nameLink: 'FANS',
               },
               {
-                  name: 'NEWS',
+                  nameLink: 'NEWS',
               },
               {
-                  name: 'SHOP',
+                  nameLink: 'SHOP',
               }
           ]
       }
@@ -84,10 +84,10 @@ a {
     line-height: 100px;
     padding-bottom: 38px;
     color: black;
-     &:hover {
-         color: $brand_primary_color;
-         border-bottom: 3px solid $brand_primary_color;
-        }
+    &:hover {
+        color: $brand_primary_color;
+        border-bottom: 3px solid $brand_primary_color;
+    }
 }
 img {
     width: 70px;
