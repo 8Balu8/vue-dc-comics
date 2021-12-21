@@ -4,6 +4,9 @@
             <div class="book-list">
                 <Book v-for="product, index in comicsBooks" :key="index" :bookObject="product"/>
             </div>
+            <span>
+                LOAD MORE
+            </span>
         </div>
     </div>
 </template>
@@ -98,6 +101,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/variables.scss';
 .book-list-contain {
     background-color: black;
     padding: 30px 0;
@@ -105,5 +109,17 @@ export default {
         display: flex;
         flex-wrap: wrap;
     }
+}
+.container {
+    position: relative;
+}
+span {
+    color: white;
+    font-size: 11px;
+    background-color: $brand_primary_color;
+    padding: 5px 20px;
+    position: absolute;
+    left: 44%;
+    top: 97%;
 }
 </style>

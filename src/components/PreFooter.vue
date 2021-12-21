@@ -1,6 +1,6 @@
 <template>
     <div class="icons-contain">
-        <div class="icon" v-for="icon in icons" :key="icon">
+        <div class="icon" v-for="icon, index in icons" :key="index">
             <img :src="require('../assets/img/' + icon.image)" :alt="icon.nameIcon">
             <h3>{{icon.nameIcon}}</h3>
         </div>

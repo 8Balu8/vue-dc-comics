@@ -1,5 +1,10 @@
 <template>
     <div class="main-cont">
+        <div class="container">
+            <span>
+                CURRENT SERIES
+            </span>
+        </div>
         <ComicsBookList/>
     </div>
 </template>
@@ -14,6 +19,19 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+@import '../styles/variables.scss';
+.container {
+    position: relative;
+    span {
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: $brand_primary_color;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    }
+}
 </style>
