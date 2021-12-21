@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <HeaderMenu />
+    <Banner/>
     <Main/>
     <PreFooter/>
     <Footer/>
@@ -14,6 +15,7 @@ import Main from "./components/Main.vue";
 import PreFooter from "./components/PreFooter.vue";
 import Footer from "./components/Footer.vue";
 import PostFooter from "./components/PostFooter.vue";
+import Banner from "./components/Banner.vue";
 
 export default {
   name: "App",
@@ -22,7 +24,8 @@ export default {
     Main,
     PreFooter,
     Footer,
-    PostFooter
+    PostFooter,
+    Banner
   },
 };
 </script>
