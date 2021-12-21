@@ -3,6 +3,8 @@
     <HeaderMenu />
     <Main/>
     <PreFooter/>
+    <Footer/>
+    <PostFooter/>
   </div>
 </template>
 
@@ -10,13 +12,17 @@
 import HeaderMenu from "./components/HeaderMenu.vue";
 import Main from "./components/Main.vue";
 import PreFooter from "./components/PreFooter.vue";
+import Footer from "./components/Footer.vue";
+import PostFooter from "./components/PostFooter.vue";
 
 export default {
   name: "App",
   components: {
     HeaderMenu,
     Main,
-    PreFooter
+    PreFooter,
+    Footer,
+    PostFooter
   },
 };
 </script>

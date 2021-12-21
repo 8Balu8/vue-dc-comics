@@ -46,20 +46,20 @@ export default {
     align-items: center;
     justify-content: center;
     color: white;
-    height: 200px;
+    height: 120px;
     background-color: $brand_primary_color;
     .icon {
         display: flex;
         align-items : center;
         h3 {
-            font-size: 14px;
+            font-size: 11px;
             font-weight: 100;
             padding-left: 10px;
             padding-right: 40px;
         }
         img {
-            width: 40px;
-            height: 50px;
+            width: 30px;
+            height: 35px;
         }
     }
 }

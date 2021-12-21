@@ -6,7 +6,7 @@
             </div>
             <div class="contain-menu">
                 <ul class="menu">
-                    <li v-for="link in links" :key="link">
+                    <li v-for="link, index in links" :key="index">
                         <a href="#">{{link.nameLink}}</a>
                     </li>
                 </ul>
@@ -80,9 +80,10 @@ export default {
     }
 }
 a {
+    font-size: 12px;
     text-decoration: none;
     line-height: 100px;
-    padding-bottom: 38px;
+    padding-bottom: 40px;
     color: black;
     &:hover {
         color: $brand_primary_color;
